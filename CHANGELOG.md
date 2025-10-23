@@ -13,3 +13,19 @@ the following form: YYYY.0M.0D.
 1. MusicQueue - queue based music playlist
 2. RollForSandwich - random sandwich generator
 3. WorkoutTracker - track and log exercises
+
+
+## 2025.10.22
+
+### Added
+
+- Designed kernel and enhanced interfaces for RollForSandwich component
+- Kernel interface includes method to roll one category, eat the whole sandwich/clear
+all ingredients, and check if the sandwich is complete (all components are filled).
+- Enhanced interface added methods that roll all categories at once, prints out the
+full sandwich, and randomly rates the sandwich.
+
+### Updated
+
+- Method contracts: @ensures, @updates, @clears
+- Javadoc comments
