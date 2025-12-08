@@ -2,32 +2,51 @@ import java.util.Objects;
 import java.util.Random;
 
 /**
- * Abstract secondary for RollForSandwich. Implements secondary methods.
+ * Abstract secondary for RollForSandwich. Implements secondary methods using
+ * only the kernel operations.
+ *
+ * @author Cassie Yuan
  */
-
 public abstract class RollForSandwichSecondary implements RollForSandwich {
 
-    /*
-     * Option lists
+    // option lists for all categories
+
+    /**
+     * Bread options.
      */
     private static final String[] BREAD_OPTIONS = { "Focaccia", "Sourdough",
             "Brioche", "Naan" };
+
+    /**
+     * Protein options.
+     */
     private static final String[] PROTEIN_OPTIONS = { "Dino nuggets", "Turkey",
             "Tuna", "Pepperoni" };
+
+    /**
+     * Cheese options.
+     */
     private static final String[] CHEESE_OPTIONS = { "Cheese curds",
             "Provolone", "Brie", "Cheddar" };
+
+    /**
+     * Wild card options.
+     */
     private static final String[] WILD_OPTIONS = { "Cauliflower", "Doritos",
             "Fries", "Pickles" };
+
+    /**
+     * Sauce options.
+     */
     private static final String[] SAUCE_OPTIONS = { "Chili oil", "Mayo",
             "Ranch", "Hot honey" };
 
     /**
      * Rolls all components by using the kernel's rollCategory and setters. Uses
-     * kernel methods only to mutate the component.
+     * kernel methods to mutate the component.
      */
     @Override
     public void rollAll() {
-        // Use kernel rollCategory to pick, then use kernel setters to store
         String b = this.rollCategory(BREAD_OPTIONS);
         this.setBread(b);
 
@@ -45,7 +64,7 @@ public abstract class RollForSandwichSecondary implements RollForSandwich {
     }
 
     /**
-     * Return a human-readable description built using kernel getters.
+     * Return a description built using kernel getters.
      */
     @Override
     public String fullSandwich() {
@@ -55,16 +74,10 @@ public abstract class RollForSandwichSecondary implements RollForSandwich {
         String w = this.getWildCard();
         String s = this.getSauce();
 
-    @Override
-    public String toString() {
-        return "Sandwich: " + partToString(b, "bread") + ", "
-                + partToString(p, "protein") + ", " + partToString(c, "cheese")
-                + ", " + partToString(w, "topping") + ", "
-                + partToString(s, "sauce");
-    }
-
-    private String partToString(String part, String label) {
-        return (part == null) ? "<no " + label + ">" : part + " " + label;
+        String description = "Your sandwich has " + b + " bread, " + p
+                + " protein, " + c + " cheese, " + w + " as a wild card, and "
+                + s + " sauce.";
+        return description;
     }
 
     /**
@@ -76,21 +89,31 @@ public abstract class RollForSandwichSecondary implements RollForSandwich {
         if (!this.isComplete()) {
             return "Finish building your sandwich!";
         }
+
+        final int maxRating = 10;
+        final int eight = 8;
+        final int six = 6;
+        final int four = 4;
+
         Random rand = new Random();
-        int rating = rand.nextInt(10) + 1;
+        int rating = rand.nextInt(maxRating) + 1;
+
         String comment;
-        if (rating >= 8) {
+        if (rating >= eight) {
             comment = "Perfect! So yummy and buss.";
-        } else if (rating >= 6) {
+        } else if (rating >= six) {
             comment = "Pretty good.";
-        } else if (rating >= 4) {
+        } else if (rating >= four) {
             comment = "Mid.";
         } else {
             comment = "Not great.";
         }
-        return "Rating: " + rating + "/10 — " + comment;
+        return "Rating: " + rating + "/10: " + comment;
     }
 
+    /**
+     * toString implemented via fullSandwich().
+     */
     @Override
     public String toString() {
         return this.fullSandwich();
@@ -103,6 +126,9 @@ public abstract class RollForSandwichSecondary implements RollForSandwich {
      */
     @Override
     public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
         if (!(obj instanceof RollForSandwich)) {
             return false;
         }
@@ -114,9 +140,12 @@ public abstract class RollForSandwichSecondary implements RollForSandwich {
                 && Objects.equals(this.getSauce(), other.getSauce());
     }
 
+    /**
+     * HashCode implemented via kernel getters.
+     */
     @Override
     public int hashCode() {
-        return Objects.hash(getBread(), getProtein(), getCheese(),
-                getWildCard(), getSauce());
+        return Objects.hash(this.getBread(), this.getProtein(),
+                this.getCheese(), this.getWildCard(), this.getSauce());
     }
 }
