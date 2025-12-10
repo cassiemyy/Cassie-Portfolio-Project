@@ -8,14 +8,14 @@ import java.util.Random;
  * @convention bread, protein, cheese, wildCard, sauce are not null. the empty
  *             string "" represents no selection for each component.
  *
- * @correspondence this.bread = bread, this.protein = protein, this.cheese =
- *                 cheese, this.wildCard = wildCard
+ * @correspondence this.bread = bread this.protein = protein this.cheese =
+ *                 cheese this.wildCard = wildCard this.sauce sauce
  */
 public class RollForSandwich1 extends RollForSandwichSecondary {
 
     /**
      * Representation fields.
-     */
+     */ v
 
     /**
      * Bread choice.
