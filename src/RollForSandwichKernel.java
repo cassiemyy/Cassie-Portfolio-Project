@@ -18,6 +18,7 @@ public interface RollForSandwichKernel extends Standard<RollForSandwich> {
      *            the array of available food toppings
      * @return the randomly selected choice
      * @ensures rollCategory = [one random element from options]
+     * @requires options != null and options.length > 0
      */
 
     String rollCategory(String[] options);
