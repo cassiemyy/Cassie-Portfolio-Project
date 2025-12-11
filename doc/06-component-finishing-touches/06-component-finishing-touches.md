@@ -1,8 +1,8 @@
 # Portfolio Part 6: Finishing Touches
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Cassie Yuan**
+- **yuan.1329**
+- **12/10 @ 11:59 PM EST**
 
 ## Assignment Overview
 
@@ -49,8 +49,6 @@ Many of these additional techniques are somewhat out of the scope of this
 course, but just knowing about them could set you up for long term success.
 
 ## Assignment Checklist
-
-<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -141,7 +139,6 @@ to see them. If you don't like this workflow, you may try following the
 rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
 and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
 
-<!-- TODO: make a new branch from main then delete this comment -->
 
 ## Assignment Tasks
 
@@ -307,18 +304,18 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+Before I completed the portfolio project, most of the class work I did was skeletons with the java doc comments and any files necessary already made for me. I better understand the different parts like interfaces, kernel, abstract, and test cases and how they come together. I  understand how to use Git to document progress and every part this project had.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+Reading over reviews and comments of each submission helped me to remember writing convention/correspondence and making useful method headers. I need to remember each aspect, and they are all important.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+I liked devloping my own code for a project I chose and enjoyed it. I liked that I got to choose something fun that made sense to me. I  like the overall designing process.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -326,25 +323,33 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+- Better understanding of interfaces, kernels, and secondary classes. This is helpful because I have a deeper knowledge of software skills, and it helps me to understand topics in class
+- Improving designing test cases that covers all methods
+- Using Git and Github with branches, changelogs, pull requests, and seeing how my work transfers to the web..
+- Writing clear JavaDoc comments.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+- Utilized GitHub for version control, with branches, pull requests, and maintaining a changelog.
+- Built JUnit tests covering standard, kernel, and secondary methods.
+- Designed and implemented a Java component with layering of kernel, abstract class, and concrete implementation.
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+I enjoyed broadening my skills in software development, and it will be helpful when considering what I would like my future career. I think I am more interested now that I better understand things.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+I could continue brainstorming different projects to do and learn more on my own.
+I hope to look at summer opportunities too.
+I could contact Mr. Grifski to help me stay on my path and see the different career paths possible.
+
 
 ### Changelog
 
