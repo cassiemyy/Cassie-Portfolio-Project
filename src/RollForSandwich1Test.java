@@ -47,7 +47,6 @@ public class RollForSandwich1Test {
         sandwich1.setProtein("Turkey");
         sandwich1.setCheese("Brie");
         sandwich1.setWildCard("Pickles");
-        sandwich1.setSauce("");
         assertFalse(sandwich1.isComplete());
     }
 

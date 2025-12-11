@@ -15,7 +15,7 @@ public final class RollForSandwichBuilder {
      * Main method.
      *
      * @param args
-     *            command line arguments.
+     *            command line arguments
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
