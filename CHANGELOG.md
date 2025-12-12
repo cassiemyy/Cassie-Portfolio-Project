@@ -8,6 +8,17 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## 2025.11.06
+
+### Added
+
+- Created the abstract class for <RollForSandwich> component
+- Added rollAll, fullSandwich, rateSandwich, and toString.
+
+### Updated
+
+- Connect the abstract class to kernel
+
 ## [2025.9.18]
 - Brainstormed 3 possible components to design
 1. MusicQueue - queue based music playlist
